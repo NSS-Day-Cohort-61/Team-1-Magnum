@@ -11,8 +11,7 @@ const database = {
   }, {
     id: 4,
     name: "Oedipa Maas"
-  },
-  {
+  }, {
     id: 5,
     name: "Benny Profane"
   }, {
@@ -35,7 +34,7 @@ const database = {
 }
 
 export const getActors = () => {
-  return database.actors.map(actor => ({...actor}));
+  return database.actors.map(actor => ({ ...actor }));
 }
 
 export const getShows = () => {
