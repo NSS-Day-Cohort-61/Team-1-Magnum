@@ -14,6 +14,9 @@ const database = {
   }, {
     id: 5,
     name: "Western"
+  }, {
+    id: 6,
+    name: "Film Noir"
   }
   ],
   actors: [{
