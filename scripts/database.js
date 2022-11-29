@@ -1,4 +1,24 @@
 const database = {
+  genres: [{
+    id: 1,
+    name: "Action"
+  }, {
+    id: 2,
+    name: "Drama"
+  }, {
+    id: 3,
+    name: "Comedy"
+  }, {
+    id: 4,
+    name: "Horror"
+  }, {
+    id: 5,
+    name: "Western"
+  }, {
+    id: 6,
+    name: "Film Noir"
+  }
+  ],
   actors: [{
     id: 1,
     name: "Bigfoot Bjornsen"
@@ -22,7 +42,6 @@ const database = {
     name: "Chevrolette McAdoo"
   },
   ]
-
 }
 
 export const getActors = () => {
@@ -31,4 +50,9 @@ export const getActors = () => {
 
 export const getShows = () => {
   return null
+}
+
+// Returns copy of array filled with genre objects
+export const getGenres = () => {
+  return database.genres.map(genre => ({ ...genre }));
 }
