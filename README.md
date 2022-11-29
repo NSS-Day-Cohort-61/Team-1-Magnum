@@ -4,7 +4,7 @@ We have been contracted to build an application that will make our customer mill
 
 ### Actors
 
-A TV watcher wants to see a list of actors. When the actor name is clicked on, the show in which the actor is the star should be displayed in an alert message.
+A TV watcher wants to see a list of actors. When the actor name is clicked on, the show(s) in which the actor is the star should be displayed in an alert message.
 
 ### Genres
 
