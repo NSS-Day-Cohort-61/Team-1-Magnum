@@ -20,16 +20,8 @@ const database = {
   }, {
     id: 7,
     name: "Chevrolette McAdoo"
-  }, {
-    id: 8,
-    name: "Rachel Owlglass"
-  }, {
-    id: 9,
-    name: "Roger Mexico"
-  }, {
-    id: 10,
-    name: "Horst Achtfaden"
-  }]
+  },
+  ]
 
 }
 
