@@ -8,7 +8,7 @@ const database = {
     },
     {
       id: 2,
-      actorId: 2,
+      actorId: 1,
       genreId: 1,
       name: "Westworld",
     },
@@ -39,30 +39,65 @@ const database = {
     {
       id: 7,
       actorId: 7,
-      genreId: 4,
+      genreId: 6,
       name: "House of the Dragon",
     },
     {
       id: 8,
-      actorId: 8,
+      actorId: 2,
       genreId: 4,
       name: "The Witcher",
     },
     {
       id: 9,
-      actorId: 9,
+      actorId: 3,
       genreId: 5,
       name: "Gangs of London",
     },
     {
       id: 10,
-      actorId: 10,
+      actorId: 4,
       genreId: 5,
       name: "Lost",
     },
   ],
-};
+  actors: [
+    {
+      id: 1,
+      name: "Bigfoot Bjornsen"
+    },
+    {
+      id: 2,
+      name: "Genghis Cohen"
+    },
+    {
+      id: 3,
+      name: "Mucho Maas"
+    },
+    {
+      id: 4,
+      name: "Oedipa Maas"
+    },
+    {
+      id: 5,
+      name: "Benny Profane"
+    },
+    {
+      id: 6,
+      name: "Tyrone Slothrop"
+    },
+    {
+      id: 7,
+      name: "Chevrolette McAdoo"
+    },
+  ]
+
+}
+
+export const getActors = () => {
+  return database.actors.map(actor => ({ ...actor }));
+}
 
 export const getShows = () => {
-  return null;
+  return database.shows.map(show => ({ ...shows }));
 };
