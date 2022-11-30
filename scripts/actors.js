@@ -11,4 +11,5 @@ const Actors = () => {
     }
 
     html += "</ul>";
+    return html;
 }
