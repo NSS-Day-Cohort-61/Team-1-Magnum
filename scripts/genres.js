@@ -1,10 +1,9 @@
-// import { getGenres, setGenres } from './database'
+import { getGenres } from "./database";
 
-// const genres = getGenres();
+const genres = getGenres();
 
-// export const genresHTML = () => {
-//     let html = ""
+export const genresHTML = () => {
+  let html = "";
 
-//     return html
-// }
-
+  return html;
+};

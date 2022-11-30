@@ -1,9 +1,9 @@
-// import { getShows, setShows } from './database'
+import { getShows } from "./database";
 
-// const shows = getShows();
+const shows = getShows();
 
-// export const showsHTML = () => {
-//     let html = ""
+export const showsHTML = () => {
+  let html = "";
 
-//     return html   
-// }
+  return html;
+};

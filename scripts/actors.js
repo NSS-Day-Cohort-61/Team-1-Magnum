@@ -1,11 +1,9 @@
-// import { getActors, setActors } from './database'
+import { getActors } from "./database";
 
-// const actors = getActors();
+const actors = getActors();
 
-// export const actorsHTML = () => {
-//     let html = ""
+export const actorsHTML = () => {
+  let html = "";
 
-
-//     return html
-// }
-
+  return html;
+};
