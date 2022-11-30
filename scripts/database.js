@@ -64,64 +64,71 @@ const database = {
   actors: [
     {
       id: 1,
-      name: "Bigfoot Bjornsen"
+      name: "Bigfoot Bjornsen",
     },
     {
       id: 2,
-      name: "Genghis Cohen"
+      name: "Genghis Cohen",
     },
     {
       id: 3,
-      name: "Mucho Maas"
+      name: "Mucho Maas",
     },
     {
       id: 4,
-      name: "Oedipa Maas"
+      name: "Oedipa Maas",
     },
     {
       id: 5,
-      name: "Benny Profane"
+      name: "Benny Profane",
     },
     {
       id: 6,
-      name: "Tyrone Slothrop"
+      name: "Tyrone Slothrop",
     },
     {
       id: 7,
-      name: "Chevrolette McAdoo"
+      name: "Chevrolette McAdoo",
     },
-    genres: [{
+  ],
+  genres: [
+    {
       id: 1,
-      name: "Action"
-    }, {
+      name: "Action",
+    },
+    {
       id: 2,
-      name: "Drama"
-    }, {
+      name: "Drama",
+    },
+    {
       id: 3,
-      name: "Comedy"
-    }, {
+      name: "Comedy",
+    },
+    {
       id: 4,
-      name: "Horror"
-    }, {
+      name: "Horror",
+    },
+    {
       id: 5,
-      name: "Western"
-    }, {
+      name: "Western",
+    },
+    {
       id: 6,
-      name: "Film Noir"
-    }
-    ],
-}
+      name: "Film Noir",
+    },
+  ],
+};
 
 export const getActors = () => {
-  return database.actors.map(actor => ({ ...actor }));
-}
+  return database.actors.map((actor) => ({ ...actor }));
+};
 
 export const getShows = () => {
-  return database.shows.map(show => ({ ...shows }));
+  return database.shows.map((show) => ({ ...shows }));
 };
-return null
+return null;
 
 // Returns copy of array filled with genre objects
 export const getGenres = () => {
-  return database.genres.map(genre => ({ ...genre }));
-}
+  return database.genres.map((genre) => ({ ...genre }));
+};
