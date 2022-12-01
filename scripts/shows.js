@@ -9,14 +9,22 @@ export const Shows = () => {
   for (const show of shows) {
     // need to take the foreign key of the show actorId
     //  and match to the actor id primary key
-    let starActor = null;
+    let starActorObj = {};
     for (const actor of actors) {
       if (show.actorId === actor.id) {
-        starActor = actor;
+        starActorObj = actor;
+      }
+    }
+    // need to take the foreign key of the genre genreId
+    // and match it to the genre id primary key
+    let genreObj = {};
+    for (const genre of genres) {
+      if (show.genreId === genre.id) {
+        genreObj = genre;
       }
     }
     // build and add a list item string to the html string
-    html += `<li>${show.name} (${show.genre}) starring ${starActor}</li>`;
+    html += `<li>${show.name} (${genreObj.name}) starring ${starActorObj.name}</li>`;
   }
   html += "</ul>";
   return html;
