@@ -2,7 +2,7 @@ import { getActors } from "./database.js";
 
 const actors = getActors();
 
-const Actors = () => {
+export const Actors = () => {
     let html = "";
     html = "<ul>";
 
