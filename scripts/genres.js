@@ -1,4 +1,4 @@
-import { getGenres } from "./database";
+import { getGenres } from "./database.js";
 
 const genres = getGenres();
 

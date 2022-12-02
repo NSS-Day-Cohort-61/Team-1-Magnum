@@ -1,7 +1,8 @@
-import { getActors, getShows } from "./database.js";
+import { getActors, getShows, getGenres } from "./database.js";
 
 const actors = getActors();
 const shows = getShows();
+const genres = getGenres();
 
 export const Shows = () => {
   let html = "<ul>";
