@@ -2,16 +2,13 @@ import { getGenres } from "./database";
 
 const genres = getGenres();
 
-/* 
-  Iterate through genres array
-  display
-*/
-export const genresHTML = () => {
+export const Genres = () => {
   let html = "<ul>";
 
   for (const genre of genres) {
-    html += `<li>${genre.name}</li>`
+    html += `<li id="genre--${genre.id}">${genre.name}</li>`
   }
 
-  return html += `</ul>`;
+  html += `</ul>`;
+  return html;
 };
