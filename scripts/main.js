@@ -1,6 +1,6 @@
-import { actorsHTML } from "./actors.js";
-import { genresHTML } from "./genres.js";
-import { showsHTML } from "./shows.js";
+import { Actors } from "./actors.js";
+import { Genres } from "./genres.js";
+import { Shows } from "./shows.js";
 
 const mainContainer = document.querySelector("#content");
 

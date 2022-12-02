@@ -124,7 +124,7 @@ export const getActors = () => {
 };
 
 export const getShows = () => {
-  return database.shows.map((show) => ({ ...shows }));
+  return database.shows.map((show) => ({ ...show }));
 };
 
 // Returns copy of array filled with genre objects
