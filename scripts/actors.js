@@ -1,9 +1,15 @@
-import { getActors } from "./database";
+import { getActors } from "./database.js";
 
 const actors = getActors();
 
-export const actorsHTML = () => {
-  let html = "";
+const Actors = () => {
+    let html = "";
+    html = "<ul>";
 
-  return html;
-};
+    for(const actor of actors) {
+        html += `<li id="actor--${actor.id}>${actor.name}</li>`;
+    }
+
+    html += "</ul>";
+    return html;
+}
